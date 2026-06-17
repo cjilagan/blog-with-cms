@@ -9,6 +9,6 @@
         <h1>{{ post.title }}</h1>
         <p>By {{ post.author }} · {{ post.created_at|date:"F j, Y" }}</p>
         <hr>
-        {{ post.content|linebreaks }}
+        {{ post.content|safe }}
     </article>
 {% endblock %}

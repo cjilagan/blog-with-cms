@@ -9,7 +9,7 @@
         <article>
             <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
             <p>By {{ post.author }} · {{ post.created_at|date:"F j, Y" }}</p>
-            <p>{{ post.content|truncatewords:30 }}</p>
+            <p>{{ post.content|striptags|truncatewords:30 }}</p>
         </article>
         <hr>
     {% empty %}
