@@ -11,3 +11,10 @@
 {% empty %}
     <p>No published posts yet.</p>
 {% endfor %}
+
+<p>
+    {% for category in post.categories.all %}
+        <a href="?category={{ category.slug }}">{{ category.name }}</a>
+        {% if not forloop.last %}, {% endif %}
+    {% endfor %}
+</p>
