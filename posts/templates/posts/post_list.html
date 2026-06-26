@@ -3,8 +3,8 @@
 {% block title %}Blog Posts{% endblock %}
 
 {% block content %}
+<a href="{% url 'home' %}">← Back to home</a>
 <h1>Blog Posts</h1>
-
 <div>
     <a href="{% url 'post_list' %}">All</a>
     {% for category in categories %}
