@@ -8,7 +8,7 @@
 <div>
     <a href="{% url 'post_list' %}">All</a>
     {% for category in categories %}
-        <a href="?category={{ category.slug }}"
+        <a href="{% url 'category_detail' category.slug %}"
            {% if current_category == category.slug %}
                style="font-weight: bold; text-decoration: underline;"
            {% endif %}>
