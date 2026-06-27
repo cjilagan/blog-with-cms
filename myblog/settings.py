@@ -132,3 +132,4 @@ CKEDITOR_UPLOAD_PATH = "uploads/"
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 WHITENOISE_USE_FINDERS = True
+CSRF_TRUSTED_ORIGINS = os.environ.get('CSRF_TRUSTED_ORIGINS', '').split()
