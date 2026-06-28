@@ -30,33 +30,6 @@ nav {
     text-decoration: none;
 }
 
-.search-form {
-    display: flex;
-    align-items: center;
-    border: 1px solid #e0e0e0;
-    border-radius: 999px;
-    overflow: hidden;
-    padding: 0.3rem 0.8rem;
-    gap: 0.5rem;
-}
-
-.search-form input {
-    border: none;
-    outline: none;
-    font-size: 0.9rem;
-    font-family: 'Inter', sans-serif;
-    color: #1a1a1a;
-    width: 200px;
-    background: transparent;
-}
-
-.search-form button {
-    border: none;
-    background: none;
-    cursor: pointer;
-    font-size: 1rem;
-    color: #e8673a;
-}
 
 .nav-links {
     display: flex;
