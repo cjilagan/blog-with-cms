@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* CSS */
 .button-18 {
   align-items: center;
   background-color: #ffda75;
@@ -32,6 +31,7 @@
   user-select: none;
   -webkit-user-select: none;
   vertical-align: middle;
+  margin-bottom: 1.5rem;
 }
 
 .button-18:hover,
@@ -41,7 +41,7 @@
 }
 
 .button-18:active {
-  background: #09223b;
+  background: #e8693b;
   color: rgb(255, 255, 255, .7);
 }
 
@@ -50,6 +50,7 @@
   background: rgba(0, 0, 0, .08);
   color: rgba(0, 0, 0, .3);
 }
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #ffffff;
@@ -93,7 +94,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #e8673a;
+    color: #e8693b;
 }
 
 
