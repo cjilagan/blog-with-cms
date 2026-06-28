@@ -1,0 +1,8 @@
+{% extends 'posts/base.html' %}
+
+{% block title %}Search: {{ query }}{% endblock %}
+
+{% block content %}
+    <h1>Search results for "{{ query }}"</h1>
+    {% include 'posts/partials/post_items.html' with posts=results %}
+{% endblock %}

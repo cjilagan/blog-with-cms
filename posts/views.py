@@ -39,3 +39,14 @@ def category_detail(request, slug):
         'category': category,
         'page_obj': page_obj,
     })
+
+def search(request):
+    query = request.GET.get('q', '')
+    results = Post.objects.filter(
+        status='published',
+        title__icontains=query
+    ).order_by('-created_at') if query else Post.objects.none()
+    return render(request, 'posts/search.html', {
+        'results': results,
+        'query': query,
+    })

@@ -1,17 +1,24 @@
 {% for post in posts %}
     <article>
-        <h2>
-            <a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a>
-        </h2>
-        <p>By {{ post.author }} · {{ post.created_at|date:"F j, Y" }}</p>
-        <p>{{ post.content|striptags|truncatewords:30 }}</p>
-        <p>
+        <span class="post-category">
             {% for category in post.categories.all %}
                 <a href="{% url 'category_detail' category.slug %}">{{ category.name }}</a>
-                {% if not forloop.last %}, {% endif %}
+                {% if not forloop.last %} · {% endif %}
             {% endfor %}
-        </p>
+        </span>
+
+        <h2><a href="{% url 'post_detail' post.slug %}">{{ post.title }}</a></h2>
+
+        <div class="post-meta">
+            <a href="#">{{ post.author }}</a>
+            <span>·</span>
+            <span>Posted on {{ post.created_at|date:"F j, Y" }}</span>
+        </div>
+
+        <p class="post-excerpt">{{ post.content|striptags|truncatewords:30 }}</p>
+
+        <a href="{% url 'post_detail' post.slug %}" class="read-more">Read more</a>
     </article>
 {% empty %}
-    <p>No published posts yet.</p>
+    <p class="empty-state">No published posts yet.</p>
 {% endfor %}
