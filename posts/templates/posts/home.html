@@ -4,9 +4,12 @@
 
 {% block content %}
 <div class="home-intro">
-    <h1>Welcome to My Blog</h1>
-    <p>This is the home page. Check out the latest posts below:</p>
-
+    <h1>Hey, I'm CJ —<br>a Computer Engineering student<br>who <span>builds things.</span></h1>
+    <p>
+        I write about my journey through software development, the projects I'm building, 
+        and the decisions that come with navigating a career in tech. 
+        From ESP32 microcontrollers to Django web apps — this is where I document it all.
+    </p>
     <h2>Latest Posts</h2>
 </div>
 {% include 'posts/partials/post_items.html' with posts=latest_posts %}

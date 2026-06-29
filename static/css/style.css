@@ -58,8 +58,40 @@ body {
     line-height: 1.6;
 }
 
-.home-intro p{
-    margin-bottom: 2rem;
+
+.home-intro {
+    padding: 4rem 0 3rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 3rem;
+}
+
+.home-intro h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.home-intro h1 span {
+    color: #e8673a;
+}
+
+.home-intro p {
+    font-size: 1.05rem;
+    color: #555;
+    line-height: 1.8;
+    max-width: 520px;
+    margin-bottom: 3rem;
+}
+
+.home-intro h2 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #888;
 }
 
 nav {
