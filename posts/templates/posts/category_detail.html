@@ -3,7 +3,7 @@
 {% block title %}{{ category.name }}{% endblock %}
 
 {% block content %}
-    <a href="{% url 'post_list' %}">← Back to posts</a>
+    <a href="{% url 'post_list' %}" class="button-18">← Back to posts</a>
     <h1>Posts in: {{ category.name }}</h1>
     {% include 'posts/partials/post_items.html' with posts=page_obj %}
     <div class="pagination1">
